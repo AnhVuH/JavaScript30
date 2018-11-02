@@ -1,0 +1,49 @@
+body, html{
+  height: 110%
+}
+
+.background {
+  background-image: url("LongBien-271018.jpg");
+  background-position: center;
+  height: 100%;
+  background-size: cover;
+}
+
+.align-center{
+  display: flex;
+  align-items: center;
+}
+
+.justify-content-center{
+  display: flex;
+  justify-content: center;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.w-8{
+  width: 8%;
+}
+
+.button{
+  margin: 1em;
+  border: solid;
+  border-radius: 3px;
+  border-width: 2px;
+  border-color: black;
+  background-color: gray;
+  background: rgba(0,0,0,0.5); /*opacity background =0.5 */
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 10px yellow;
+  transition: all 0.7s;
+}
+
+.playing{
+  transform: scale(1.1);
+  border-color: yellow;
+  box-shadow: 2px 2px 10px yellow;
+}

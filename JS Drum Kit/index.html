@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="index.css">
+    <script src = "index.js" async>
+     // if not use async, JavaScript loaded before html loaded => querySelectorALL("div[data-key]") length = 0
+     // or use internal script (before </body>) to avoid 
+    </script>
+
+    <title>JavaScript Drum Kit</title>
+  </head>
+  <body>
+    <div class= "background align-center ">
+      <div id ="container-button" class="justify-content-center  w-100">
+        <div data-key="a" class="w-8 button"> A </div>
+        <div data-key="s" class="w-8 button"> S </div>
+        <div data-key="d" class="w-8 button"> D </div>
+        <div data-key="f" class="w-8 button"> F </div>
+        <div data-key="h" class="w-8 button"> H </div>
+        <div data-key="j" class="w-8 button"> J </div>
+        <div data-key="k" class="w-8 button"> K </div>
+        <div data-key="l" class="w-8 button"> L </div>
+      </div>
+    </div>
+
+
+      <audio data-key="a" src="sound\26879__vexst__closed-hi-hat-1.wav" type="audio/wav" ></audio>
+      <audio data-key="s" src="sound\26884__vexst__crash.wav" type="audio/wav"></audio>
+      <audio data-key="d" src="sound\26885__vexst__kick-1.wav" type="audio/wav"></audio>
+      <audio data-key="f" src="sound\26903__vexst__snare-4.wav" type="audio/wav"></audio>
+      <audio data-key="h" src="sound\26878__vexst__bass-stab.wav" type="audio/wav"></audio>
+      <audio data-key="j" src="sound\26892__vexst__reverse-roll-4.wav" type="audio/wav"></audio>
+      <audio data-key="k" src="sound\26889__vexst__open-hi-hat.wav" type="audio/wav"></audio>
+      <audio data-key="l" src="sound\26895__vexst__semi-kick-2-2.wav" type="audio/wav"></audio>
+
+
+  </body>
+</html>
