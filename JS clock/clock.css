@@ -1,0 +1,63 @@
+html, body {
+  height: 100%;
+}
+
+.bg{
+  height: 100%;
+  background-image: url("img\\b-im59016573.jpg");
+  /* background-image: url("img\\bicycles.png"); /* \b =backspace => add one more \ */ */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin:border-box; /*The background image starts from the upper left corner of the border */
+  /* Default-The background image starts from the upper left corner of the padding edge */
+  opacity: 0.7;
+  /* position: relative; */
+}
+
+.clock-face{
+  width: 20%;
+  padding-top: 20%; /* maintain the aspect ratio 1:1 */
+  border: solid 10px;
+  border-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translateY(-10px);
+}
+.hand{
+  transform-origin: center right;
+  transition: all 0.001s;
+  /* transition: all 1s;   // if duration too long, second-hand will moves over 60s position then go back*/
+}
+
+.second-hand{
+  width:45%;
+  height: 4px;
+  background-color: brown;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-2px);
+}
+
+.minute-hand{
+  width: 40%;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-3px);
+}
+
+.hour-hand{
+  width: 30%;
+  height: 8px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-4px);
+}
