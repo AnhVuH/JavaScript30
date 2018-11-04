@@ -1,0 +1,23 @@
+html, body{
+  height: 100%;
+  background-color: #555c68;
+  text-align: center;
+}
+
+:root{
+  --spacing: 20px;
+  --blur: 0px;
+  --base: #ffff00;
+}
+
+img{
+  width: 100%;
+  padding: var(--spacing);
+  box-sizing: border-box;
+  filter: blur(var(--blur));
+  background-color: var(--base);
+}
+
+.highlight{
+  color: var(--base);
+}
