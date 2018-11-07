@@ -51,13 +51,13 @@ function displayWord(){
     const html =listCities.map(cityObj => {
       // const newLi =document.createElement('li');
       // newLi.innerHTML = cityObj.city + ' ' + cityObj.state;
-      // return newLi;
+      // return newLi; // return HTMLElement Object
       return `<li> <span class ="name">${cityObj.city}, ${cityObj.state}</span> <span class = "population">${numberWithCommas(cityObj.population)}</span></li>`
     }).join('')
     // console.log(html)
     return html;
   })
-  .then(html =>suggestions.innerHTML =html);
+  .then(html =>suggestions.innerHTML =html);// innerHTML is text
 
 }
 
